@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kevkevco/stepladder/issues"
   },
-  "homepage": "https://github.com/kevkevco/stepladder#readme"
+  "homepage": "https://github.com/kevkevco/stepladder#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
