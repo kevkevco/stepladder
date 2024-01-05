@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css' // TODO
 import './styles/tailwind.css'
-import Link from './Link.jsx';
+import Link from './components/Link.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
