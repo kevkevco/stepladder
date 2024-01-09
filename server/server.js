@@ -1,9 +1,4 @@
-const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
+const app = require('./app');
 
 const port = process.env.PORT || 3000; // Use the provided PORT or default to 3000
 app.listen(port, () => {
