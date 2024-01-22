@@ -1,4 +1,4 @@
-const app = require('./app');
+import app from './app.js';
 
 const port = process.env.PORT || 3000; // Use the provided PORT or default to 3000
 app.listen(port, () => {

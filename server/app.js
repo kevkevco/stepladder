@@ -1,8 +1,8 @@
-const express = require('express');
+import express from 'express';
 const app = express();
 
 // Import and execute the code in db.js to establish the database connection
-const db = require('./db.js');
+import db from './db.js';
 
 // Middleware
 app.use(express.json());
@@ -15,4 +15,4 @@ app.get('/', (req, res) => {
 // Error handling
 // ...
 
-module.exports = app;
+export default app;

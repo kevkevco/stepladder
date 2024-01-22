@@ -1,5 +1,11 @@
-import { connect, connection } from 'mongoose';
-connect(process.env.DATABASE_URL, {
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+
+if (process.env.NODE_ENV !== 'production') {
+    dotenv.config();
+    console.log("Database at: " + process.env.DATABASE_URL);
+}
+mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
@@ -11,10 +17,10 @@ connect(process.env.DATABASE_URL, {
         console.error('Error connecting to MongoDB:', error);
     });
 
-const db = connection;
+const db = mongoose.connection;
 
 db.on('error', (error) => {
     console.error('MongoDB error:', error);
 });
 
-module.exports = db; // Export the database connection to be used by the Express server
+export default db; // Export the database connection to be used by the Express server
