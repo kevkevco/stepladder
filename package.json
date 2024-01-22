@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite",
-    "start-server": "cd server && node server.js"
+    "start": "cd server && node server.js",
+    "build": "cd client && npm install && npm run build && cd ../server && npm install",
+    "postinstall": ""
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/kevkevco/stepladder/issues"
   },
-  "homepage": "https://github.com/kevkevco/stepladder#readme",
-  "devDependencies": {
-    "vite": "^5.0.10"
-  }
+  "homepage": "https://github.com/kevkevco/stepladder#readme"
 }
