@@ -8,10 +8,10 @@ import ErrorPage from './components/ErrorPage';
 
 // Components
 import Layout from './components/Layout';
+import HomePage from './components/HomePage';
 // import AboutPage from './components/AboutPage';
 // import Coaching from './components/Coaching';
 // import Courses from './components/Courses';
-// import HomePage from './components/HomePage';
 
 const router = createBrowserRouter([
   {
@@ -19,10 +19,10 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
-      // {
-      //   path: "/",
-      //   element: <HomePage />,
-      // },
+      {
+        path: "/",
+        element: <HomePage />,
+      },
       // {
       //   path: "about",
       //   element: <AboutPage />,

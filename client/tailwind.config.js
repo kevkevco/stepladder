@@ -14,6 +14,7 @@ export default {
       'open': ['"Open Sans"', 'sans-serif'],
     },
     colors: {
+      'white': '#ffffff',
       'jet': {
         DEFAULT: '#333132',
         100: '#d7d5d6',

@@ -18,29 +18,29 @@ const Header = () => {
                     <Link to={'/'} className="lg:col-span-1 flex justify-start lg:justify-center">
                         <img src={logo} alt="Logo" className='h-12' />
                     </Link>
-                    <ul className="hidden lg:flex justify-center col-span-2 space-x-6">
+                    <ul className="hidden pt-2 lg:flex justify-center col-span-2 space-x-6">
                         <Link to={'about'} className={linkStyles}>About</Link>
                         <Link to={'courses'} className={linkStyles}>Courses</Link>
                         <Link to={'coaching'} className={linkStyles}>Coaching</Link>
                         <Link to={'resources'} className={linkStyles}>Resources</Link>
                     </ul>
                     <div className="hidden space-x-4 lg:flex justify-center">
-                        <Button text="Log In" onClick={'courses'} colors="border-2 border-solid border-jet bg-white text-jet hover:bg-sun-400" />
-                        <Button text="Get Started" onClick={'courses'} colors="border-2 border-jet bg-lime text-jet hover:bg-sun-400" />
+                        <Button text="Log In" onClick={'courses'} colors="border-0 border-jet bg-white text-jet hover:bg-sun-400" />
+                        <Button text="Get Started" onClick={'courses'} colors="border-0 border-jet bg-lime text-jet hover:bg-sun-400" />
                     </div>
                     {/* Hamburger Icon */}
                     <button className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                        <HamburgerIcon className="hover:text-moss h-8 lg:hidden" />
+                        <HamburgerIcon className="hover:text-moss w-12 h-auto lg:hidden" />
                     </button>
                 </nav>
             </div>
             {/* Mobile Menu */}
             {isMenuOpen && (
                 <>
-                    <div className={`absolute top-0 left-0 h-full w-full font-halogen space-y-2 text-2xl font-bold bg-jet text-white flex flex-col items-start py-12 px-8 justify-start`}>
+                    <div className={`z-50 fixed inset-0 w-full font-halogen space-y-2 text-2xl font-bold bg-jet text-white flex flex-col items-start py-12 px-8 justify-start`}>
                         <div className='w-full flex justify-end'>
                             <button className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                                <ExitIcon className="h-16" />
+                                <ExitIcon className="h-auto w-20" />
                             </button>
                         </div>
                         <Link to={'about'} className={menuLinkStyles} onClick={() => setIsMenuOpen(false)}>About</Link>

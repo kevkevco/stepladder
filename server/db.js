@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 if (process.env.NODE_ENV !== 'production') {
     dotenv.config();
-    console.log("Database at: " + process.env.DATABASE_URL);
+    console.log("Database URL: " + process.env.DATABASE_URL);
 }
 mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
