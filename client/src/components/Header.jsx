@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo-color-reversed.png';
 import Button from './Button';
-import { Bars3Icon as HamburgerIcon } from '@heroicons/react/20/solid';
-import { XMarkIcon as ExitIcon } from '@heroicons/react/20/solid';
+import { HiOutlineBars3 as HamburgerIcon} from "react-icons/hi2";
+import { IoCloseOutline as ExitIcon} from "react-icons/io5";
+
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);

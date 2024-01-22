@@ -1,6 +1,8 @@
 import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo-color-reversed.png';
+import Highlight from './Highlight.jsx';
+import { LuClipboardCopy as ClipboardDocumentIcon} from "react-icons/lu";
 
 const linkStyles = "font-halogen hover:text-moss hover:font-bold transition-all ease-in-out duration-100";
 
