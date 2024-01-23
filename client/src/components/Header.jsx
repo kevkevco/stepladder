@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <header>
             {/* Default Menu */}
-            <div className="bg-ocean font-halogen font-medium text-white lg:flex justify-center px-4">
+            <div className="bg-ocean font-halogen tracking-wide text-white lg:flex justify-center px-4">
                 <nav className="lg:grid lg:grid-cols-4 h-24 flex justify-between items-center max-w-screen-2xl">
                     <Link to={'/'} className="lg:col-span-1 flex justify-start lg:justify-center">
                         <img src={logo} alt="Logo" className='h-12' />
