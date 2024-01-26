@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd server && node server.js",
     "build": "cd client && npm install && npm run build && cd ../server && npm install",
-    "postinstall": ""
+    "postinstall": "",
+    "dev": "cd client && npm run dev"
   },
   "repository": {
     "type": "git",
