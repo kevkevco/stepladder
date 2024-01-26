@@ -93,11 +93,13 @@ const EmailCopyLink = () => {
         onClick={handleCopyEmail}
         className={`group font-halogen transition-all duration-0 ease-in-out`}
       >
-        <ClipboardDocumentIcon className="absolute -left-[2.2rem] hidden text-[1rem] animate-bounce  text-moss-600 group-hover:block" />{' '}
+        <div className='scale-[130%] absolute -left-[1.5rem] bottom-[5px]'>
+          <ClipboardDocumentIcon className=" hidden animate-bounce text-moss-600 group-hover:block" />{' '}
+          </div>
         info@stepladder.org
       </button>
       {isCopied && (
-        <span className="absolute w-[120%] bottom-[2rem] -right-[3px] flex-row justify-center flex bg-earth px-4 py-2 font-halogen text-sm white">
+        <span className="absolute w-[120%] bottom-[2.1rem] -right-[8px] flex-row justify-center flex bg-earth px-4 py-2 font-halogen text-sm white">
           Copied to clipboard.
         </span>
       )}

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useRouteError } from 'react-router-dom';
 import Button from './Button';
-import { Link } from 'react-router-dom';
 
 export default function ErrorPage() {
   const error = useRouteError();
