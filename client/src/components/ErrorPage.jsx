@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useRouteError } from 'react-router-dom';
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -30,7 +31,7 @@ export default function ErrorPage() {
       <div className="mt-6">
         <Button
           text="Back to the homepage"
-          onClick={'/coaching'}
+          onClick={'/'}
           colors="hover:shadow-lg font-halogen bg-sky hover:bg-sun"
         />
       </div>

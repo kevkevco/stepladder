@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Parent component must add underline and decoration-COLOR
+// Parent component must PASS underline as argument, and must PASS or HAVE decoration-COLOR
 const Highlight = ({ children, styles }) => {
   return (
     <span

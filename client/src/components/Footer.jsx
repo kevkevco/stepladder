@@ -1,11 +1,12 @@
-import { React, useState } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../assets/logo-color-reversed.png';
-import Highlight from './Highlight.jsx';
-import { LuClipboardCopy as ClipboardDocumentIcon } from 'react-icons/lu';
+import { React, useState } from 'react'
+import { Link } from 'react-router-dom'
+import logo from '../assets/logo-color-reversed.png'
+import Highlight from './Highlight.jsx'
+import { LuClipboardCopy as ClipboardDocumentIcon } from 'react-icons/lu'
 
-const linkStyles =
-  'font-halogen decoration-moss-700 hover:underline transition-all ease-in-out duration-300';
+const linkStyles = 'font-halogen decoration-moss-700'
+const linkStylesOnHover =
+  'decoration-moss-700 hover:underline transition-all ease-in-out duration-300'
 
 function Footer() {
   return (
@@ -19,22 +20,22 @@ function Footer() {
             <EmailCopyLink />
           </div>
           <ul className="flex flex-col content-start justify-start space-y-2">
-            <Highlight>
+            <Highlight styles={linkStylesOnHover}>
               <Link to={'about'} className={linkStyles}>
                 About
               </Link>
             </Highlight>
-            <Highlight>
+            <Highlight styles={linkStylesOnHover}>
               <Link to={'courses'} className={linkStyles}>
                 Courses
               </Link>
             </Highlight>
-            <Highlight>
+            <Highlight styles={linkStylesOnHover}>
               <Link to={'coaching'} className={linkStyles}>
                 Coaching
               </Link>
             </Highlight>
-            <Highlight>
+            <Highlight styles={linkStylesOnHover}>
               <Link to={'resources'} className={linkStyles}>
                 Resources
               </Link>{' '}
@@ -58,7 +59,7 @@ function Footer() {
             Website by{' '}
             <Link
               to="https://github.com/kevkevco"
-              className="duration-00 transition-all ease-in-out hover:font-bold hover:text-moss"
+              className="transition-all duration-300 ease-in-out hover:text-moss"
             >
               @kevkevco
             </Link>
@@ -66,40 +67,40 @@ function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
 
 const EmailCopyLink = () => {
-  const [isCopied, setIsCopied] = useState(false);
+  const [isCopied, setIsCopied] = useState(false)
 
-  const email = 'info@stepladder.org';
+  const email = 'info@stepladder.org'
 
   const handleCopyEmail = async () => {
     try {
-      await navigator.clipboard.writeText(email);
-      setIsCopied(true);
-      setTimeout(() => setIsCopied(false), 1500); // Hide notification after 1.5 seconds
+      await navigator.clipboard.writeText(email)
+      setIsCopied(true)
+      setTimeout(() => setIsCopied(false), 1500) // Hide notification after 1.5 seconds
     } catch (err) {
-      console.error('Failed to copy email: ', err);
+      console.error('Failed to copy email: ', err)
     }
-  };
+  }
 
   return (
-    <div className="flex flex-col items-start space-y-2">
+    <div className="relative flex flex-col items-start space-y-2">
       <button
         onClick={handleCopyEmail}
-        className={`hover:text-bold group font-halogen transition-all duration-300 ease-in-out hover:font-bold hover:text-moss`}
+        className={`group font-halogen transition-all duration-0 ease-in-out`}
       >
-        <ClipboardDocumentIcon className="mb-[-16px] ml-[-21.5px] hidden h-4 text-moss group-hover:block" />{' '}
+        <ClipboardDocumentIcon className="absolute -left-[2.2rem] hidden text-[1rem] animate-bounce  text-moss-600 group-hover:block" />{' '}
         info@stepladder.org
       </button>
       {isCopied && (
-        <span className="float-left rounded-lg bg-moss-200 px-4 py-2 font-halogen text-sm font-bold text-jet-600 opacity-80">
+        <span className="absolute w-[120%] bottom-[2rem] -right-[3px] flex-row justify-center flex bg-earth px-4 py-2 font-halogen text-sm white">
           Copied to clipboard.
         </span>
       )}
     </div>
-  );
-};
+  )
+}

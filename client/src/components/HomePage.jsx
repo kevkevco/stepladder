@@ -159,10 +159,10 @@ function FinancialGoals() {
           </div>
         </div>
         <div className="">
-          <h1 className="min-w-[500px] pb-12 pt-24 font-halogen text-3xl italic tracking-tight text-jet">
+          <h1 className="min-w-[500px] pb-12 pt-24 font-halogen text-4xl italic tracking-tight text-jet">
             Reach your goals.
             <br />
-            <div className="font-poppins text-4xl font-bold not-italic text-jet">
+            <div className="font-poppins text-5xl font-bold not-italic text-jet">
               Realize Financial Freedom.
             </div>
           </h1>
