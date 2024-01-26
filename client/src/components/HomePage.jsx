@@ -1,18 +1,18 @@
-import React from 'react'
-import heroImage from '../assets/pexels-michael-burrows-7129712.jpg'
-import Button from './Button'
-import Highlight from './Highlight'
-import stepsSky from '../assets/steps-sky.svg'
-import verticalLineSun from '../assets/vertical-line-sun.svg'
-import verticalLineOcean from '../assets/vertical-line-ocean.svg'
+import React from 'react';
+import heroImage from '../assets/pexels-michael-burrows-7129712.jpg';
+import Button from './Button';
+import Highlight from './Highlight';
+import stepsSky from '../assets/steps-sky.svg';
+import verticalLineSun from '../assets/vertical-line-sun.svg';
+import verticalLineOcean from '../assets/vertical-line-ocean.svg';
 // import iconBookSky from '../assets/icon-book-sky.svg';
 // import iconFamilySun from '../assets/icon-family-sun.svg';
 // import iconCashSky from '../assets/icon-cash-sky.svg';
 // import iconCertificateOcean from '../assets/icon-certificate-ocean.svg';
-import financialStepsIsometric from '../assets/financial-steps-isometric.png'
-import { FaCheck as CheckIcon } from 'react-icons/fa'
-import { MdCheckBoxOutlineBlank as CheckBox } from 'react-icons/md'
-import financialGoalsImage from '../assets/unsplash-u3hmzw5U-SI.jpg'
+import financialStepsIsometric from '../assets/financial-steps-isometric.png';
+import { FaCheck as CheckIcon } from 'react-icons/fa';
+import { MdCheckBoxOutlineBlank as CheckBox } from 'react-icons/md';
+import financialGoalsImage from '../assets/unsplash-u3hmzw5U-SI.jpg';
 
 function HomePage() {
   return (
@@ -25,16 +25,16 @@ function HomePage() {
             <FinancialCoachingSection />
             <SignupForm /> */}
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
 
 function HeroSection() {
   return (
     <section className="flex w-full justify-center px-8  py-36">
       <div className="grid max-w-screen-2xl content-center md:grid-cols-2">
-        <div className="z-10 order-last flex flex-col justify-center px-4 md:order-first lg:mt-40 lg:px-12">
+        <div className="z-10 order-last mx-4 flex flex-col justify-center px-4 md:order-first lg:mt-40 lg:px-12">
           <h1 className="mb-8 min-w-[400px] font-halogen text-3xl xl:text-5xl">
             Financial Stability
             <br />
@@ -49,10 +49,11 @@ function HeroSection() {
           </h1>
           <p className="text-s font-open">
             Managing your finances shouldn't be a burden. Our mission is to{' '}
-            <b>empower you</b> with essential financial knowledge and tools to
-            guide you towards a future of financial independence and security.
-            That's why we offer high-quality financial services and guidance in
-            a welcoming, professional environment at <b>no cost.</b>
+            empower you with essential financial knowledge and tools to guide
+            you towards a future of financial independence and security. That's
+            why our volunteer financial professionals offer high-quality
+            financial services and guidance in a welcoming, professional
+            environment at <b>no cost.</b>
           </p>
           <div className="mt-6">
             <Button
@@ -86,12 +87,12 @@ function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function Statistics() {
   return (
-    <section className="flex w-full flex-wrap items-center justify-center space-x-4 bg-moss-200 p-16 text-center font-halogen text-jet md:space-x-[10vw]">
+    <section className="flex w-full flex-wrap items-center justify-center space-x-4 bg-moss-400 p-16 text-center font-halogen text-jet-900 md:space-x-[10vw]">
       <div className="p-4">
         <h2 className="text-2xl font-bold">1000+</h2>
         <p className="text-md">People Served</p>
@@ -105,7 +106,7 @@ function Statistics() {
         <p className="text-md">Classes Led</p>
       </div>
     </section>
-  )
+  );
 }
 
 function Headline() {
@@ -134,7 +135,7 @@ function Headline() {
                 <img src={iconBookSky} alt="" className="object-fit" />
             </div> */}
     </div>
-  )
+  );
 }
 
 function FinancialGoals() {
@@ -142,11 +143,11 @@ function FinancialGoals() {
     <section className="flex w-full items-center justify-center overflow-hidden py-20">
       <div className="flex max-w-[2000px] flex-wrap items-start justify-center space-x-24 px-8 py-4">
         <div className="relative">
-          <div className="absolute -left-[30px] top-[50px] z-50 h-[50px] w-[500px] origin-left rotate-90 overflow-hidden md:block">
+          <div className="absolute -left-[40px] top-[50px] z-50 h-[50px] w-[500px] origin-left rotate-90 overflow-hidden md:block">
             <img
-              src={verticalLineSun}
+              src={verticalLineOcean}
               alt=""
-              className="h-[500px] object-cover"
+              className="h-[550px] object-cover grayscale"
             />
           </div>
           <div className=" bg-earth">
@@ -198,11 +199,13 @@ function FinancialGoals() {
             </li>
           </ul>
           <div className="text-s max-w-2xl text-wrap py-12 font-open">
-            Managing your finances shouldn't be a burden. Our mission is to{' '}
-            <b>empower you</b> with essential financial knowledge and tools to
-            guide you towards a future of financial independence and sec rity.
-            That's why we offer high-quality financial services and guidance in
-            a welcoming, professi onal environment at <b>no cost.</b>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+            eius praesentium nemo eos quidem inventore! Natus ut libero eos
+            provident vitae placeat ipsum. Earum nobis aspernatur dolorem
+            perspiciatis doloremque vel. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Aut inventore odio esse consequuntur nam debitis
+            dolor magnam officiis repellat molestiae culpa vel, a doloremque
+            distinctio harum dolores deserunt tempore alias.
           </div>
           <Button
             text="Get started"
@@ -212,7 +215,7 @@ function FinancialGoals() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 // function ClassesSection() {
